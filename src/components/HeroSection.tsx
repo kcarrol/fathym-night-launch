@@ -41,39 +41,77 @@ const HeroSection = () => {
         </div>
 
         {/* Floating code block decoration */}
-        <div className="mt-20 max-w-3xl mx-auto">
-          <div className="relative rounded-lg border border-border bg-card/50 backdrop-blur-sm p-6 font-mono text-sm overflow-hidden">
+        <div className="mt-20 max-w-4xl mx-auto">
+          <div className="relative rounded-lg border border-border bg-card/50 backdrop-blur-sm p-6 font-mono text-xs md:text-sm overflow-hidden overflow-x-auto">
             <div className="absolute top-0 left-0 right-0 h-8 bg-muted/50 border-b border-border flex items-center gap-2 px-4">
               <span className="w-3 h-3 rounded-full bg-destructive/60" />
               <span className="w-3 h-3 rounded-full bg-neon-yellow/60" />
               <span className="w-3 h-3 rounded-full bg-neon-lime/60" />
+              <span className="ml-4 text-muted-foreground text-xs">EverythingAsCode Schema</span>
             </div>
-            <div className="pt-6 space-y-2">
+            <div className="pt-6 space-y-1 whitespace-pre">
               <div>
-                <span className="text-neon-magenta">system</span>
-                <span className="text-muted-foreground">.</span>
-                <span className="text-neon-cyan">define</span>
-                <span className="text-muted-foreground">({"{"}</span>
-              </div>
-              <div className="pl-4">
-                <span className="text-neon-lime">identity</span>
+                <span className="text-neon-magenta">const</span>
+                <span className="text-foreground"> eac</span>
                 <span className="text-muted-foreground">: </span>
-                <span className="text-neon-yellow">"governed"</span>
+                <span className="text-neon-cyan">EverythingAsCode</span>
+                <span className="text-muted-foreground"> = {"{"}</span>
+              </div>
+              <div className="text-muted-foreground/60 pl-2">{"// Identity"}</div>
+              <div className="pl-2">
+                <span className="text-neon-lime">EnterpriseLookup</span>
+                <span className="text-muted-foreground">: </span>
+                <span className="text-neon-yellow">"ent-abc-123"</span>
                 <span className="text-muted-foreground">,</span>
               </div>
-              <div className="pl-4">
-                <span className="text-neon-lime">environments</span>
+              <div className="pl-2">
+                <span className="text-neon-lime">Details</span>
+                <span className="text-muted-foreground">: {"{"} </span>
+                <span className="text-neon-lime">Name</span>
                 <span className="text-muted-foreground">: </span>
-                <span className="text-neon-yellow">"derived"</span>
-                <span className="text-muted-foreground">,</span>
+                <span className="text-neon-yellow">"My Application"</span>
+                <span className="text-muted-foreground"> {"}"},</span>
+              </div>
+              <div className="mt-2" />
+              <div className="text-muted-foreground/60 pl-2">{"// ─── ORGANIZATION ───"}</div>
+              <div className="pl-2">
+                <span className="text-neon-lime">Projects</span>
+                <span className="text-muted-foreground">: {"{"} </span>
+                <span className="text-neon-yellow">"proj-1"</span>
+                <span className="text-muted-foreground">: {"{"} Details, ApplicationResolvers {"}"} {"}"},</span>
+              </div>
+              <div className="mt-2" />
+              <div className="text-muted-foreground/60 pl-2">{"// ─── APPLICATIONS ───"}</div>
+              <div className="pl-2">
+                <span className="text-neon-lime">Applications</span>
+                <span className="text-muted-foreground">: {"{"}</span>
               </div>
               <div className="pl-4">
-                <span className="text-neon-lime">governance</span>
-                <span className="text-muted-foreground">: </span>
-                <span className="text-neon-yellow">"embedded"</span>
+                <span className="text-neon-yellow">"app-web"</span>
+                <span className="text-muted-foreground">: {"{"} Processor: </span>
+                <span className="text-neon-cyan">PreactAppProcessor</span>
+                <span className="text-muted-foreground"> {"}"},</span>
               </div>
+              <div className="pl-4">
+                <span className="text-neon-yellow">"app-api"</span>
+                <span className="text-muted-foreground">: {"{"} Processor: </span>
+                <span className="text-neon-cyan">APIProcessor</span>
+                <span className="text-muted-foreground"> {"}"}</span>
+              </div>
+              <div className="pl-2"><span className="text-muted-foreground">{"}"},</span></div>
+              <div className="mt-2" />
+              <div className="text-muted-foreground/60 pl-2">{"// ─── AI CIRCUITS ───"}</div>
+              <div className="pl-2">
+                <span className="text-neon-lime">Circuits</span>
+                <span className="text-muted-foreground">: {"{"} </span>
+                <span className="text-neon-yellow">"circuit-support"</span>
+                <span className="text-muted-foreground">: {"{"} Neurons, Edges {"}"} {"}"},</span>
+              </div>
+              <div className="mt-2" />
+              <div className="text-muted-foreground/60 pl-2">{"// ─── GOVERNANCE (Built-in) ───"}</div>
+              <div className="text-muted-foreground/60 pl-2">{"// RBAC · Quotas · Audit · Multi-tenant"}</div>
               <div>
-                <span className="text-muted-foreground">{"})"}</span>
+                <span className="text-muted-foreground">{"}"}</span>
               </div>
             </div>
           </div>

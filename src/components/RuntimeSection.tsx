@@ -44,7 +44,7 @@ Software Assembly<br />
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center">
             <div className="text-3xl font-display font-bold text-primary mb-2">Assembled</div>
-            <p className="text-sm text-muted-foreground">Runtimes are composed from components</p>
+            <p className="text-sm text-muted-foreground">Runtimes are composed</p>
           </div>
           <div className="text-center">
             <div className="text-3xl font-display font-bold text-secondary mb-2">Reused</div>

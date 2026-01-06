@@ -1,20 +1,16 @@
 import { AlertTriangle, Layers, Zap, Users } from "lucide-react";
 const problems = [{
   icon: Layers,
-  title: "Fragmented Configuration",
-  description: "Environment-specific scripts and loosely coordinated tooling create complexity."
+  title: "Fragmented Configuration"
 }, {
   icon: AlertTriangle,
-  title: "Implicit Assumptions",
-  description: "Critical system knowledge exists only in human context, not in code."
+  title: "Environment-Specific Scripts"
 }, {
   icon: Zap,
-  title: "No System Contract",
-  description: "No shared, machine-readable contract explains what the system consists of."
+  title: "Loosely Coordinated Tooling"
 }, {
   icon: Users,
-  title: "AI Can't Reason",
-  description: "Without a system model, AI can generate code but cannot reason about it."
+  title: "Implicit Assumptions"
 }];
 const ProblemSection = () => {
   return <section className="py-32 relative overflow-hidden">

@@ -22,7 +22,7 @@ const RuntimeSection = () => {
       
       <div className="container relative z-10 mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight mb-6">Modular and Extensible
+          <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight mb-6">Modular and extensible
 Software Composition<br />
             <span className="text-gradient-magenta">Software Composition</span>
           </h2>

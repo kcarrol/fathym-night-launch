@@ -42,7 +42,7 @@ All of them increase creation speed. But production systems are still assembled 
                 <problem.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-display text-lg font-semibold mb-2">{problem.title}</h3>
-              <p className="text-sm text-muted-foreground">{problem.description}</p>
+              
             </div>)}
         </div>
 

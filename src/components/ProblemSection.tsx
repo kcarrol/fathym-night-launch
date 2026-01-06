@@ -27,15 +27,11 @@ const ProblemSection = () => {
             <br />
             <span className="text-muted-foreground">But not how systems are built.</span>
           </h2>
-          <p className="text-lg text-muted-foreground">AI tools can generate code, APIs, workflows, and integrations from prompts. 
+          <p className="text-lg text-muted-foreground">AI tools can generate code, APIs, workflows, and integrations from prompts.
 
 Some operate as copilots for developers. Some act as agents performing scoped development tasks. Some provide conversational interfaces that assemble working prototypes from scratch.
 
-
-
-All of them increase creation speed.
-
-But production systems are still assembled through fragmented processes.</p>
+All of them increase creation speed. But production systems are still assembled through fragmented processes.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

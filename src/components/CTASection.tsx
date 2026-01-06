@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const CTASection = () => {
-  return (
-    <section className="py-32 relative overflow-hidden">
+  return <section className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 hero-grid opacity-50" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-cyan/10 rounded-full blur-3xl" />
       
@@ -20,9 +18,7 @@ const CTASection = () => {
             a platform for governed AI in industrial and operational environments where 
             reliability and accountability are non-negotiable.
           </p>
-          <p className="text-foreground font-medium mb-10">
-            EaC is not a theoretical model. It is an operating model already running real systems.
-          </p>
+          
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="neon" size="lg" className="group" asChild>
@@ -37,8 +33,6 @@ const CTASection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;

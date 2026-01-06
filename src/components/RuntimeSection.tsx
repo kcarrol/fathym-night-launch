@@ -24,7 +24,7 @@ const RuntimeSection = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight mb-6">Modular and extensible
 Not Monoliths<br />
-            <span className="text-gradient-magenta">Not Monoliths</span>
+            <span className="text-gradient-magenta">Software Assembly</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             EaC separates system definition from system execution. Execution happens through modular, 

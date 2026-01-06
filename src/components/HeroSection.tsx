@@ -27,7 +27,7 @@ const HeroSection = () => {
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delay-2">
             AI has transformed how software is created. But it hasn't changed how software systems are assembled, governed, or evolved. 
-            <span className="text-foreground font-medium"> Everything as Code is the operating model that makes AI-assisted software.coherent, deployable, and future proof.</span>
+            <span className="text-foreground font-medium"> Everything as Code is the operating model that makes AI-assisted software coherent, deployable, and future proof.</span>
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">

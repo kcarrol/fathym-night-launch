@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-grid">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-grid">
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-cyan/10 rounded-full blur-3xl animate-glow-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-magenta/10 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-magenta/10 rounded-full blur-3xl animate-glow-pulse" style={{
+      animationDelay: "1.5s"
+    }} />
       
       <div className="container relative z-10 mx-auto px-6 pt-24">
         <div className="max-w-4xl mx-auto text-center">
@@ -26,7 +26,7 @@ const HeroSection = () => {
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delay-2">
             AI has transformed how software is created. But it hasn't changed how software systems are assembled, governed, or evolved. 
-            <span className="text-foreground font-medium"> EaC is the operating model that makes it possible.</span>
+            <span className="text-foreground font-medium"> Everything as Code is the operating model that makes AI-assisted software.coherent, deployable, and future proof.</span>
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
@@ -117,8 +117,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;

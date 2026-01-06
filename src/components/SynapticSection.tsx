@@ -1,5 +1,6 @@
 import { Brain, Shield, GitPullRequest, Network } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const capabilities = [
   {
@@ -69,8 +70,8 @@ const SynapticSection = () => {
               Model Context Protocol (MCP), Synaptic turns AI from an external automation into a 
               first-class, governed participant in the system.
             </p>
-            <Button variant="secondary-neon" size="lg">
-              Learn About Synaptic
+            <Button variant="secondary-neon" size="lg" asChild>
+              <Link to="/synaptic">Learn About Synaptic</Link>
             </Button>
           </div>
         </div>

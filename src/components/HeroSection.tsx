@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-grid">
       {/* Gradient overlays */}
@@ -30,9 +31,11 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
-            <Button variant="neon" size="lg" className="group">
-              Explore EaC
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <Button variant="neon" size="lg" className="group" asChild>
+              <Link to="/everything-as-code">
+                Explore EaC
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
             <Button variant="outline" size="lg" className="border-border hover:bg-muted">
               View Documentation

@@ -64,9 +64,7 @@ const Synaptic = () => {
             <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6">
               Synaptic
             </h1>
-            <p className="text-2xl md:text-3xl text-muted-foreground mb-8">
-              Governed AI execution as a runtime, not an experiment.
-            </p>
+            <p className="text-2xl md:text-3xl text-muted-foreground mb-8">Governed and portable AI execution for production systems</p>
             <p className="text-lg text-muted-foreground max-w-3xl">AI is not limited to generating code. It can execute workflows, reason over live data, make decisions, and propose changes to running systems. The challenge is no longer enabling AI execution. The challenge is enabling AI execution as part of a system. Synaptic exists to make AI execution composable, governed, and system-aware.</p>
           </div>
         </div>

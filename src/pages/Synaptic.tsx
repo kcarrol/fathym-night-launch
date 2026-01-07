@@ -100,9 +100,7 @@ const Synaptic = () => {
             <div className="relative">
               <div className="absolute -inset-4 border-glow rounded-3xl opacity-30" />
               <div className="relative rounded-2xl border border-border bg-card/50 backdrop-blur-sm p-8">
-                <h3 className="font-display text-xl font-semibold mb-6 text-foreground">
-                  This creates a structural gap:
-                </h3>
+                
                 <div className="space-y-4">
                   {structuralGaps.map((item, index) => <div key={index} className="flex items-start gap-3">
                       <Zap className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />

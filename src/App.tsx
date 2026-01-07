@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import EverythingAsCode from "./pages/EverythingAsCode";
 import Synaptic from "./pages/Synaptic";
+import FtmCli from "./pages/FtmCli";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/everything-as-code" element={<EverythingAsCode />} />
           <Route path="/synaptic" element={<Synaptic />} />
+          <Route path="/ftm-cli" element={<FtmCli />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -15,7 +15,9 @@ const Header = () => {
           <a href="/synaptic" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Synaptic
           </a>
-          
+          <a href="/ftm-cli" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            FTM CLI
+          </a>
         </nav>
 
         <div className="flex items-center gap-4">

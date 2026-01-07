@@ -152,9 +152,7 @@ const Synaptic = () => {
                 and contextualizes them inside real systems. These frameworks intentionally focus on 
                 agent behavior and orchestration.
               </p>
-              <p className="text-muted-foreground">
-                This separation allows teams to adopt best-in-class AI tooling while maintaining control.
-              </p>
+              <p className="text-muted-foreground">Synaptic allows teams to adopt best-in-class AI tooling while maintaining control.</p>
             </div>
             
             <div className="relative">

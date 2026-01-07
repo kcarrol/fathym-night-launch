@@ -123,11 +123,7 @@ const Synaptic = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
               What Synaptic is
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Synaptic is Fathym's AI execution runtime, built on the Everything as Code model. 
-              It provides orchestration primitives — but treats execution context, identity, and 
-              governance as intrinsic to runtime behavior.
-            </p>
+            <p className="text-lg text-muted-foreground">Synaptic is Fathym's AI execution runtime and framework, built on the Everything as Code model. It provides orchestration primitives and treats execution context, identity, and governance as intrinsic to runtime behavior.</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

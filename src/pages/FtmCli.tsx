@@ -96,9 +96,7 @@ const FtmCli = () => {
               FTM is the primary human–AI interface to the Everything as Code operating model. It is where system intent is defined, changes are proposed, reviewed, and applied, and where AI operates under explicit control.
             </p>
             <div className="p-6 rounded-xl border border-border bg-card/30">
-              <p className="text-muted-foreground italic">
-                "This is not a deployment script or a thin wrapper around cloud APIs. It is the control surface for assembling and evolving real systems."
-              </p>
+              <p className="text-muted-foreground italic">This is not a deployment script or a thin wrapper around cloud APIs. It is the control surface for assembling and evolving real systems.</p>
             </div>
           </div>
         </div>

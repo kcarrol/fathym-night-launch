@@ -136,11 +136,8 @@ const FtmCli = () => {
             
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg text-muted-foreground mb-8">
-                  Modern AI tools can generate applications, services, and workflows in minutes. What they cannot do safely is decide how a system should change.
-                </p>
-                <p className="text-muted-foreground">
-                  FTM exists because governance cannot live in dashboards, and stewardship cannot be implicit.
+                <p className="text-lg text-muted-foreground">
+                  Modern AI tools can generate applications, services, and workflows in minutes. What they cannot do safely is decide <em>how a system should change</em>.
                 </p>
               </div>
               
@@ -160,11 +157,6 @@ const FtmCli = () => {
                       <span className="text-foreground">{item.text}</span>
                     </div>
                   ))}
-                </div>
-                <div className="mt-8 pt-6 border-t border-border">
-                  <p className="text-accent font-medium">
-                    "The CLI remains the place where humans and AI meet under rules."
-                  </p>
                 </div>
               </div>
             </div>
@@ -220,12 +212,9 @@ const FtmCli = () => {
                     </div>
                   ))}
                 </div>
-                <p className="text-muted-foreground">
-                  Where other tools act on fragments, FTM acts on the system.
-                </p>
               </div>
               
-              <div className="p-8 rounded-xl border border-accent/30 bg-accent/5 border-glow-accent">
+              <div className="p-8 rounded-xl border border-accent/30 bg-accent/5">
                 <p className="text-xl font-display font-semibold text-accent">
                   It sits above them, enforcing a system-level contract they all operate within.
                 </p>
@@ -288,9 +277,6 @@ const FtmCli = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-center">
               Built for <span className="text-gradient-magenta">humans</span> and <span className="text-gradient-cyan">AI</span>
             </h2>
-            <p className="text-center text-muted-foreground mb-12">
-              FTM is designed for collaboration, not automation theater.
-            </p>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="p-8 rounded-xl border border-secondary/30 bg-background/50 border-glow-magenta">
@@ -326,61 +312,11 @@ const FtmCli = () => {
             
             <div className="text-center p-6 rounded-xl border border-border bg-background/30">
               <p className="text-lg text-muted-foreground">Both operate against the same system model.</p>
-              <p className="text-accent font-display font-semibold mt-4">
-                No hidden state. No side channels. No magic.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why CLI-First */}
-      <section className="py-24 relative">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
-                  Why CLI-first comes <span className="text-gradient-lime">first</span>
-                </h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Every foundational platform that succeeded started here:
-                </p>
-                <div className="flex gap-4 mb-8">
-                  {["Git", "Terraform", "Kubernetes"].map((platform, index) => (
-                    <span key={index} className="px-4 py-2 rounded-lg border border-accent/30 bg-accent/10 text-accent font-medium">
-                      {platform}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-muted-foreground">
-                  Before GUIs. Before marketplaces. Before abstractions.
-                </p>
-              </div>
-              
-              <div className="p-8 rounded-xl border border-border bg-card/30">
-                <h3 className="text-xl font-display font-semibold mb-6">FTM establishes:</h3>
-                <div className="space-y-4">
-                  {["Trust", "Correctness", "A shared system contract"].map((item, index) => (
-                    <div key={index} className="flex items-center gap-4">
-                      <div className="w-3 h-3 rounded-full bg-accent" />
-                      <span className="text-foreground">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-8 pt-6 border-t border-border">
-                  <p className="text-muted-foreground">
-                    Only once that exists do higher-level interfaces make sense.
-                  </p>
-                  <p className="text-accent font-medium mt-2">
-                    Everything else builds on this.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* What This Enables Next */}
       <section className="py-24 bg-card/30 relative">

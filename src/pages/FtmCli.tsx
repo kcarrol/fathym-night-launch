@@ -263,7 +263,7 @@ const FtmCli = () => {
               <div className="p-8 rounded-xl border border-primary/30 bg-background/50 border-glow">
                 <div className="flex items-center gap-3 mb-6">
                   <Bot className="w-8 h-8 text-primary" />
-                  <h3 className="text-xl font-display font-semibold">AI uses it to:</h3>
+                  <h3 className="text-xl font-display font-semibold">AI uses it to</h3>
                 </div>
                 <ul className="space-y-3">
                   {["Read full system context", "Generate compliant proposals", "Operate within scoped authority"].map((item, index) => <li key={index} className="flex items-center gap-3 text-muted-foreground">

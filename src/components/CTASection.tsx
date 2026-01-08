@@ -22,10 +22,10 @@ const CTASection = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="neon" size="lg" className="group" asChild>
-              <Link to="/everything-as-code">
-                Start Building with EaC
+              <a href="https://www.openindustrial.co/" target="_blank" rel="noopener noreferrer">
+                View Open Industrial
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
             </Button>
             <Button variant="outline" size="lg" className="border-border hover:bg-muted">
               Schedule a Demo

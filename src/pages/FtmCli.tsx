@@ -250,7 +250,7 @@ const FtmCli = () => {
               <div className="p-8 rounded-xl border border-secondary/30 bg-background/50 border-glow-magenta">
                 <div className="flex items-center gap-3 mb-6">
                   <User className="w-8 h-8 text-secondary" />
-                  <h3 className="text-xl font-display font-semibold">Humans use it to:</h3>
+                  <h3 className="text-xl font-display font-semibold">Humans use it to</h3>
                 </div>
                 <ul className="space-y-3">
                   {["Define intent", "Approve change", "Understand consequences"].map((item, index) => <li key={index} className="flex items-center gap-3 text-muted-foreground">

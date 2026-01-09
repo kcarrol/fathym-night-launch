@@ -1,9 +1,21 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Terminal, Shield, FileCheck, History, FileCode, Search, GitBranch, Bot, User, Cpu, Layers, Building2, Rocket, ArrowRight } from "lucide-react";
+
 const FtmCli = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://js.hsforms.net/forms/embed/2687377.js";
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   const cliFeatures = [{
     icon: FileCode,
     title: "Define system intent",
@@ -97,6 +109,15 @@ const FtmCli = () => {
             </p>
             <div className="p-6 rounded-xl border border-border bg-card/30">
               <p className="text-muted-foreground italic">This is not a deployment script or a thin wrapper around cloud APIs. It is the control surface for assembling and evolving real systems.</p>
+            </div>
+            
+            <div className="mt-8">
+              <div 
+                className="hs-form-frame" 
+                data-region="na1" 
+                data-form-id="63742639-0a43-471a-adf3-0a2b4a0354fd" 
+                data-portal-id="2687377"
+              />
             </div>
           </div>
         </div>

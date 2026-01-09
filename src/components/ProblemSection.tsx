@@ -21,7 +21,7 @@ const ProblemSection = () => {
           <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight mb-6">
             AI changed how software is created.
             <br />
-            <span className="text-muted-foreground">But not how systems are built.</span>
+            <span className="text-primary">But not how systems are built.</span>
           </h2>
           <p className="text-lg text-muted-foreground">AI tools can generate code, APIs, workflows, and integrations from prompts.
 

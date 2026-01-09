@@ -296,8 +296,9 @@ const Synaptic = () => {
           
           <div className="max-w-3xl mx-auto">
             <div className="rounded-2xl border border-secondary/30 bg-secondary/5 p-8">
-              <h3 className="font-display text-2xl font-semibold mb-6 text-foreground flex items-center gap-3">AI agents<Shield className="w-6 h-6 text-secondary" />
-                AI agents:
+              <h3 className="font-display text-2xl font-semibold mb-6 text-foreground flex items-center gap-3">
+                <Shield className="w-6 h-6 text-secondary" />
+                AI agents
               </h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {agentRules.map((item, index) => <div key={index} className="flex items-start gap-3 p-4 rounded-lg bg-background/50">

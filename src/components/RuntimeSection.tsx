@@ -1,18 +1,18 @@
 import { Box, Cpu, GitBranch, Workflow } from "lucide-react";
 const runtimes = [{
-  name: "Web",
+  name: "Web Runtimes",
   icon: Box,
   color: "neon-cyan"
 }, {
-  name: "API",
+  name: "API Runtimes",
   icon: Cpu,
   color: "neon-magenta"
 }, {
-  name: "Workflow",
+  name: "Workflow Runtimes",
   icon: Workflow,
   color: "neon-lime"
 }, {
-  name: "AI",
+  name: "AI Runtimes",
   icon: GitBranch,
   color: "neon-yellow"
 }];

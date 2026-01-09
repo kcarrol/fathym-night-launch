@@ -118,7 +118,7 @@ const FtmCli = () => {
               </div>
               
               <div className="p-8 rounded-xl border border-border bg-background/50 border-glow">
-                <h3 className="text-xl font-display font-semibold mb-6 text-primary">Production software still requires:</h3>
+                <h3 className="text-xl font-display font-semibold mb-6 text-primary">Production software still requires</h3>
                 <div className="space-y-4">
                   {[{
                   icon: Terminal,

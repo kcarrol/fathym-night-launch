@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import EverythingAsCode from "./pages/EverythingAsCode";
 import Synaptic from "./pages/Synaptic";
 import FtmCli from "./pages/FtmCli";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/everything-as-code" element={<EverythingAsCode />} />
           <Route path="/synaptic" element={<Synaptic />} />
           <Route path="/ftm-cli" element={<FtmCli />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

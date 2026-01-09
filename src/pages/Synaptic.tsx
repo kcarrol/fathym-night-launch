@@ -367,12 +367,16 @@ const Synaptic = () => {
             <p className="text-lg text-muted-foreground">Synaptic defines circuits as portable Everything-as-Code artifacts that execute across environments.</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {portabilityEnvironments.map((item, index) => <div key={index} className="p-6 rounded-xl border border-border bg-background/50 text-center hover:border-primary/50 transition-colors">
                 <item.icon className="w-8 h-8 text-primary mx-auto mb-4" />
                 <span className="text-foreground">{item.text}</span>
               </div>)}
           </div>
+          
+          <p className="text-center text-muted-foreground max-w-3xl mx-auto">
+            Because circuits declare intent, structure, and boundaries, execution adapts to the runtime without changing the workflow. One Synaptic circuit can run simultaneously across different runtimes.
+          </p>
         </div>
       </section>
 

@@ -204,9 +204,7 @@ const FtmCli = () => {
             <p className="text-center text-muted-foreground mb-4 max-w-2xl mx-auto">
               FTM operates directly on Everything as Code definitions. Every command reads, validates, and writes against the same declarative system model that drives execution.
             </p>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Changes flow through explicit stages:
-            </p>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Changes flow through explicit stages.</p>
             
             <div className="flex flex-wrap justify-center gap-4 mb-12">
               {workflowSteps.map((step, index) => <div key={index} className="flex items-center gap-3">

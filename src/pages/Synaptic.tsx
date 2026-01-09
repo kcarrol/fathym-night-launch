@@ -364,11 +364,7 @@ const Synaptic = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
               Portable by design
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Synaptic workflows are not tied to a specific environment. Portability emerges from 
-              Synaptic's declarative execution model, not from environment-specific tooling or 
-              deployment scripts.
-            </p>
+            <p className="text-lg text-muted-foreground">Synaptic defines circuits as portable Everything-as-Code artifacts that execute across environments.</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

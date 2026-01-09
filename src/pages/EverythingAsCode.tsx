@@ -149,7 +149,7 @@ const EverythingAsCode = () => {
             </div>
             
             <div className="rounded-2xl border border-secondary/30 bg-secondary/5 p-8">
-              <h3 className="font-display text-2xl font-semibold mb-6 text-foreground">Organizations gain:</h3>
+              <h3 className="font-display text-2xl font-semibold mb-6 text-foreground">Organizations gain</h3>
               <div className="space-y-4">
                 {orgGains.map((item, index) => <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />

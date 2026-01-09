@@ -2,69 +2,34 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Code, Shield, Layers, Workflow, Database, Users, Bot, CheckCircle, XCircle, ArrowRight } from "lucide-react";
-
-const problemItems = [
-  "YAML files scattered across repositories",
-  "Little or no schema validation",
-  "Environment-specific copies that drift over time",
-  "Tribal knowledge about what connects to what",
-];
-
-const systemIncludes = [
-  { icon: Layers, text: "Applications and APIs" },
-  { icon: Code, text: "Runtimes and execution environments" },
-  { icon: Users, text: "Identity, tenancy, and access control" },
-  { icon: Database, text: "Environments and deployment intent" },
-  { icon: Workflow, text: "Data sources and integrations" },
-  { icon: Bot, text: "Workflows and event-driven logic" },
-];
-
-const aiCan = [
-  "Read the system model to understand context",
-  "Generate and assemble compatible components",
-  "Execute workflows within defined capabilities",
-  "Propose system changes safely and predictably",
-];
-
-const orgGains = [
-  "Clear domain ownership reflected directly in system definitions",
-  "Autonomous teams that assemble systems without breaking global constraints",
-  "Alignment between how systems are built and how teams operate",
-];
-
-const runtimeProcessors = [
-  "Request handling",
-  "Data access",
-  "Rendering",
-  "Messaging",
-  "Workflow execution",
-  "AI orchestration",
-];
-
-const stewardshipEnsures = [
-  "Interpret system intent consistently",
-  "Enforce governance and policy by default",
-  "Control how change is introduced",
-  "Maintain accountability as the system evolves",
-];
-
-const aiCannot = [
-  "Bypass identity or policy",
-  "Mutate infrastructure directly",
-  "Operate outside declared boundaries",
-  "Introduce untracked or unaudited changes",
-];
-
-const whyMatters = [
-  "Assemble complex systems intentionally",
-  "Give AI meaningful context",
-  "Enable reuse at the system level",
-  "Preserve control as systems evolve",
-];
-
+const problemItems = ["YAML files scattered across repositories", "Little or no schema validation", "Environment-specific copies that drift over time", "Tribal knowledge about what connects to what"];
+const systemIncludes = [{
+  icon: Layers,
+  text: "Applications and APIs"
+}, {
+  icon: Code,
+  text: "Runtimes and execution environments"
+}, {
+  icon: Users,
+  text: "Identity, tenancy, and access control"
+}, {
+  icon: Database,
+  text: "Environments and deployment intent"
+}, {
+  icon: Workflow,
+  text: "Data sources and integrations"
+}, {
+  icon: Bot,
+  text: "Workflows and event-driven logic"
+}];
+const aiCan = ["Read the system model to understand context", "Generate and assemble compatible components", "Execute workflows within defined capabilities", "Propose system changes safely and predictably"];
+const orgGains = ["Clear domain ownership reflected directly in system definitions", "Autonomous teams that assemble systems without breaking global constraints", "Alignment between how systems are built and how teams operate"];
+const runtimeProcessors = ["Request handling", "Data access", "Rendering", "Messaging", "Workflow execution", "AI orchestration"];
+const stewardshipEnsures = ["Interpret system intent consistently", "Enforce governance and policy by default", "Control how change is introduced", "Maintain accountability as the system evolves"];
+const aiCannot = ["Bypass identity or policy", "Mutate infrastructure directly", "Operate outside declared boundaries", "Introduce untracked or unaudited changes"];
+const whyMatters = ["Assemble complex systems intentionally", "Give AI meaningful context", "Enable reuse at the system level", "Preserve control as systems evolve"];
 const EverythingAsCode = () => {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
+  return <div className="min-h-screen bg-background text-foreground">
       <Header />
       
       {/* Hero Section */}
@@ -120,16 +85,12 @@ const EverythingAsCode = () => {
             <div className="relative">
               <div className="absolute -inset-4 border-glow rounded-3xl opacity-30" />
               <div className="relative rounded-2xl border border-border bg-card/50 backdrop-blur-sm p-8">
-                <h3 className="font-display text-xl font-semibold mb-6 text-foreground">
-                  Today's configuration sprawl:
-                </h3>
+                <h3 className="font-display text-xl font-semibold mb-6 text-foreground">Today's configuration sprawl</h3>
                 <div className="space-y-4">
-                  {problemItems.map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
+                  {problemItems.map((item, index) => <div key={index} className="flex items-start gap-3">
                       <XCircle className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
                       <span className="text-muted-foreground">{item}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
             </div>
@@ -154,15 +115,10 @@ const EverythingAsCode = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {systemIncludes.map((item, index) => (
-              <div 
-                key={index}
-                className="p-6 rounded-xl border border-border bg-background/50 hover:border-primary/50 transition-colors"
-              >
+            {systemIncludes.map((item, index) => <div key={index} className="p-6 rounded-xl border border-border bg-background/50 hover:border-primary/50 transition-colors">
                 <item.icon className="w-8 h-8 text-primary mb-4" />
                 <span className="text-foreground font-medium">{item.text}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -187,24 +143,20 @@ const EverythingAsCode = () => {
             <div className="rounded-2xl border border-primary/30 bg-primary/5 p-8">
               <h3 className="font-display text-2xl font-semibold mb-6 text-foreground">AI can:</h3>
               <div className="space-y-4">
-                {aiCan.map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                {aiCan.map((item, index) => <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
             <div className="rounded-2xl border border-secondary/30 bg-secondary/5 p-8">
               <h3 className="font-display text-2xl font-semibold mb-6 text-foreground">Organizations gain:</h3>
               <div className="space-y-4">
-                {orgGains.map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                {orgGains.map((item, index) => <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -261,14 +213,9 @@ const EverythingAsCode = () => {
                   Each runtime is built by composing processors:
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
-                  {runtimeProcessors.map((item, index) => (
-                    <div 
-                      key={index}
-                      className="px-4 py-3 rounded-lg bg-accent/10 border border-accent/20 text-sm text-foreground"
-                    >
+                  {runtimeProcessors.map((item, index) => <div key={index} className="px-4 py-3 rounded-lg bg-accent/10 border border-accent/20 text-sm text-foreground">
                       {item}
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
                 <p className="text-sm text-muted-foreground mt-6">
                   No processor belongs to a single runtime. Capabilities are reusable, extensible, and shared 
@@ -297,15 +244,10 @@ const EverythingAsCode = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {stewardshipEnsures.map((item, index) => (
-              <div 
-                key={index}
-                className="p-6 rounded-xl border border-border bg-card/50 text-center"
-              >
+            {stewardshipEnsures.map((item, index) => <div key={index} className="p-6 rounded-xl border border-border bg-card/50 text-center">
                 <Shield className="w-8 h-8 text-primary mx-auto mb-4" />
                 <span className="text-foreground">{item}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
           
           <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
@@ -332,23 +274,12 @@ const EverythingAsCode = () => {
           
           <div className="max-w-4xl mx-auto">
             <div className="space-y-4">
-              {[
-                "The system is defined declaratively using the EaC model",
-                "That definition is validated and interpreted through stewardship",
-                "An execution graph is resolved from the system structure",
-                "Infrastructure and runtimes are reconciled as needed",
-                "Execution proceeds within explicit, governed boundaries",
-              ].map((step, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center gap-6 p-6 rounded-xl border border-border bg-background/50"
-                >
+              {["The system is defined declaratively using the EaC model", "That definition is validated and interpreted through stewardship", "An execution graph is resolved from the system structure", "Infrastructure and runtimes are reconciled as needed", "Execution proceeds within explicit, governed boundaries"].map((step, index) => <div key={index} className="flex items-center gap-6 p-6 rounded-xl border border-border bg-background/50">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                     <span className="font-display text-xl font-bold text-primary">{index + 1}</span>
                   </div>
                   <span className="text-foreground text-lg">{step}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <p className="text-center text-muted-foreground mt-8">
@@ -382,12 +313,10 @@ const EverythingAsCode = () => {
                 AI can:
               </h3>
               <div className="space-y-4">
-                {["Read the system model to understand context", "Assemble compatible components", "Execute workflows within declared capabilities"].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                {["Read the system model to understand context", "Assemble compatible components", "Execute workflows within declared capabilities"].map((item, index) => <div key={index} className="flex items-start gap-3">
                     <ArrowRight className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
@@ -397,12 +326,10 @@ const EverythingAsCode = () => {
                 AI cannot:
               </h3>
               <div className="space-y-4">
-                {aiCannot.map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                {aiCannot.map((item, index) => <div key={index} className="flex items-start gap-3">
                     <ArrowRight className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -426,15 +353,10 @@ const EverythingAsCode = () => {
             </p>
             
             <div className="grid md:grid-cols-2 gap-6 text-left mb-12">
-              {whyMatters.map((item, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center gap-4 p-6 rounded-xl border border-primary/30 bg-primary/5"
-                >
+              {whyMatters.map((item, index) => <div key={index} className="flex items-center gap-4 p-6 rounded-xl border border-primary/30 bg-primary/5">
                   <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
                   <span className="text-foreground font-medium">{item}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <Button variant="neon" size="lg">
@@ -445,8 +367,6 @@ const EverythingAsCode = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default EverythingAsCode;

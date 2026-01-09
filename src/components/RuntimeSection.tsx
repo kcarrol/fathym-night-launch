@@ -26,7 +26,7 @@ const RuntimeSection = () => {
             Modular and extensible<br />
             <span className="text-gradient-magenta">software composition</span>
           </h2>
-          <p className="text-lg text-muted-foreground">EaC separates system definition from system execution. Execution happens through modular, composable runtimes built from shared processors, such as:</p>
+          <p className="text-lg text-muted-foreground">EaC separates system definition from system execution. Execution happens through modular, composable runtimes built from shared processors.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">

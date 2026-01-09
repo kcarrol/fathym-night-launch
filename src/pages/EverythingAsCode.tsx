@@ -149,7 +149,7 @@ const EverythingAsCode = () => {
             </div>
             
             <div className="rounded-2xl border border-secondary/30 bg-secondary/5 p-8">
-              <h3 className="font-display text-2xl font-semibold mb-6 text-foreground">Organizations gain</h3>
+              <h3 className="font-display text-2xl font-semibold mb-6 text-foreground">Organizations gain:</h3>
               <div className="space-y-4">
                 {orgGains.map((item, index) => <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
@@ -259,9 +259,7 @@ const EverythingAsCode = () => {
       <section className="py-24 bg-card/30">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="text-secondary text-sm font-medium tracking-wider uppercase mb-4 block">
-              Execution Model
-            </span>
+            <span className="text-secondary text-sm font-medium tracking-wider uppercase mb-4 block">AI cannot</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
               How an Everything as Code system works
             </h2>

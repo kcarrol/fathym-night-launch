@@ -102,9 +102,7 @@ const EverythingAsCode = () => {
       <section className="py-24 bg-card/30">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-16">
-            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
-              The Solution
-            </span>
+            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">AI can</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
               What Everything as Code is
             </h2>

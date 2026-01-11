@@ -51,7 +51,9 @@ const EverythingAsCode = () => {
             <p className="text-lg text-muted-foreground max-w-3xl">
               Software systems are no longer built one application at a time. They are assembled from runtimes, 
               services, workflows, data sources, identity systems, and increasingly, AI-driven logic that can 
-              generate, modify, and extend those systems continuously. Everything as Code defines how these pieces 
+              generate, modify, and extend those systems continuously.
+              <br /><br />
+              Everything as Code defines how these pieces 
               come together into a coherent, governable, and future-proof system — one that both humans and AI 
               can understand and evolve.
             </p>

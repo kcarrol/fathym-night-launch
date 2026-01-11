@@ -27,7 +27,7 @@ const ProblemSection = () => {
 
 Some operate as copilots for developers. Some act as agents performing scoped development tasks. Some provide conversational interfaces that assemble working prototypes from scratch.
 
-All of them increase creation speed. But production systems are still assembled through fragmented processes.</p>
+<br /><br />All of them increase creation speed. But production systems are still assembled through fragmented processes.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

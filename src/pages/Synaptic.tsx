@@ -65,7 +65,7 @@ const Synaptic = () => {
               Synaptic
             </h1>
             <p className="text-2xl md:text-3xl text-muted-foreground mb-8">Governed and portable AI execution for production systems</p>
-            <p className="text-lg text-muted-foreground max-w-3xl">AI is not limited to generating code. It can execute workflows, reason over live data, make decisions, and propose changes to running systems. The challenge is no longer enabling AI execution. The challenge is enabling AI execution as part of a system. Synaptic exists to make AI execution composable, governed, and system-aware.</p>
+            <p className="text-lg text-muted-foreground max-w-3xl">AI is not limited to generating code. It can execute workflows, reason over live data, make decisions, and propose changes to running systems.<br /><br />The challenge is no longer enabling AI execution. The challenge is enabling AI execution as part of a system. Synaptic exists to make AI execution composable, governed, and system-aware.</p>
           </div>
         </div>
       </section>

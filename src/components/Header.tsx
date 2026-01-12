@@ -11,6 +11,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
+    { href: "/about", label: "About" },
     { href: "/everything-as-code", label: "Everything as Code" },
     { href: "/synaptic", label: "Synaptic" },
     { href: "/ftm-cli", label: "FTM CLI" },

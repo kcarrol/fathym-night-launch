@@ -122,7 +122,8 @@ const About = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-8">
               Who it's <span className="text-neon-cyan">for</span>
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12">Fathym is designed for teams building real systems, not just experiments real systems, not just experiments real systems, not just experiments.<span className="text-foreground font-medium">real systems</span>, not just experiments:
+            <p className="text-lg text-muted-foreground text-center mb-12">
+              Fathym is designed for teams building <span className="text-foreground font-medium">real systems</span>, not just experiments:
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">

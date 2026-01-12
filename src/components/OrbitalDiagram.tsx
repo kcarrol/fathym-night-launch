@@ -1,13 +1,13 @@
 const OrbitalDiagram = () => {
   const orbitItems = [
-    { label: "AI Agents", color: "neon-magenta", position: "top-[8%] left-1/2 -translate-x-1/2" },
-    { label: "Runtimes", color: "muted-foreground", position: "top-[12%] left-[28%]" },
-    { label: "Workflows", color: "muted-foreground", position: "top-[12%] right-[20%]" },
-    { label: "Applications", color: "neon-cyan", position: "top-[28%] left-[12%]" },
-    { label: "Data & APIs", color: "neon-magenta", position: "top-[28%] right-[10%]" },
-    { label: "Infrastructure", color: "neon-lime", position: "bottom-[20%] left-[14%]" },
-    { label: "Identity & Auth", color: "neon-cyan", position: "bottom-[22%] right-[10%]" },
-    { label: "Environments", color: "neon-yellow", position: "bottom-[8%] left-1/2 -translate-x-1/2" },
+    { label: "AI Agents", color: "neon-magenta", position: "top-[2%] md:top-[8%] left-1/2 -translate-x-1/2" },
+    { label: "Runtimes", color: "muted-foreground", position: "top-[12%] md:top-[12%] left-[5%] md:left-[28%]" },
+    { label: "Workflows", color: "muted-foreground", position: "top-[12%] md:top-[12%] right-[5%] md:right-[20%]" },
+    { label: "Applications", color: "neon-cyan", position: "top-[28%] md:top-[28%] left-[2%] md:left-[12%]" },
+    { label: "Data & APIs", color: "neon-magenta", position: "top-[28%] md:top-[28%] right-[2%] md:right-[10%]" },
+    { label: "Infrastructure", color: "neon-lime", position: "bottom-[28%] md:bottom-[20%] left-[2%] md:left-[14%]" },
+    { label: "Identity & Auth", color: "neon-cyan", position: "bottom-[28%] md:bottom-[22%] right-[2%] md:right-[10%]" },
+    { label: "Environments", color: "neon-yellow", position: "bottom-[2%] md:bottom-[8%] left-1/2 -translate-x-1/2" },
   ];
 
   const getColorClasses = (color: string) => {
@@ -26,12 +26,12 @@ const OrbitalDiagram = () => {
   };
 
   return (
-    <section className="relative py-24 overflow-hidden bg-background">
+    <section className="relative py-12 md:py-24 overflow-hidden bg-background">
       {/* Background gradients */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       
-      <div className="container relative z-10 mx-auto px-6">
-        <div className="relative w-full max-w-5xl mx-auto aspect-[16/10]">
+      <div className="container relative z-10 mx-auto px-4 md:px-6">
+        <div className="relative w-full max-w-5xl mx-auto aspect-[4/5] md:aspect-[16/10]">
           {/* Orbital ellipses - using SVG for dashed ellipses */}
           <svg
             className="absolute inset-0 w-full h-full"
@@ -91,16 +91,16 @@ const OrbitalDiagram = () => {
           {/* Center circle with glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
             {/* Glow effects */}
-            <div className="absolute inset-0 w-40 h-40 md:w-48 md:h-48 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+            <div className="absolute inset-0 w-28 h-28 md:w-48 md:h-48 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
               <div className="absolute inset-0 bg-neon-cyan/20 rounded-full blur-2xl animate-glow-pulse" />
               <div className="absolute inset-0 bg-neon-magenta/15 rounded-full blur-3xl translate-x-4 animate-glow-pulse" style={{ animationDelay: "1s" }} />
             </div>
             
             {/* Main circle */}
-            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-neon-cyan bg-background/90 flex flex-col items-center justify-center shadow-[0_0_30px_rgba(0,255,255,0.3)]">
-              <span className="font-display text-lg md:text-xl font-bold text-foreground">Everything</span>
-              <span className="text-sm text-muted-foreground">as</span>
-              <span className="font-display text-lg md:text-xl font-bold text-neon-magenta">Code</span>
+            <div className="relative w-24 h-24 md:w-40 md:h-40 rounded-full border-2 border-neon-cyan bg-background/90 flex flex-col items-center justify-center shadow-[0_0_30px_rgba(0,255,255,0.3)]">
+              <span className="font-display text-base md:text-xl font-bold text-foreground">Everything</span>
+              <span className="text-xs md:text-sm text-muted-foreground">as</span>
+              <span className="font-display text-base md:text-xl font-bold text-neon-magenta">Code</span>
             </div>
           </div>
 
@@ -111,7 +111,7 @@ const OrbitalDiagram = () => {
               className={`absolute ${item.position} z-10`}
             >
               <div
-                className={`px-4 py-2 rounded-md border bg-background/80 backdrop-blur-sm text-sm font-medium whitespace-nowrap ${getColorClasses(item.color)}`}
+                className={`px-2 py-1 md:px-4 md:py-2 rounded-md border bg-background/80 backdrop-blur-sm text-xs md:text-sm font-medium whitespace-nowrap ${getColorClasses(item.color)}`}
               >
                 {item.label}
               </div>

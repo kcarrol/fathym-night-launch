@@ -2,38 +2,24 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Users, Target, Rocket } from "lucide-react";
-
 const About = () => {
-  const principles = [
-    "Systems should be explicitly defined, not inferred",
-    "Structure should be machine-readable, not tribal knowledge",
-    "AI should be a governed participant, not an external force",
-    "Change should be intentional and auditable",
-  ];
-
-  const whatWeBuild = [
-    "A unified system model (Everything as Code)",
-    "Synaptic framework for agentic AI execution and governance",
-    "Composable execution runtime architecture and reference runtimes (Web, API, Flow, Synaptic)",
-    "FTM CLI for effective human and AI software co-architecture",
-  ];
-
-  const audiences = [
-    { icon: Code, label: "Platform and infrastructure teams" },
-    { icon: Users, label: "Architects and system designers" },
-    { icon: Target, label: "AI-forward engineering teams" },
-    { icon: Rocket, label: "Organizations operating in regulated or high-stakes environments" },
-  ];
-
-  const beliefs = [
-    "Structure enables speed",
-    "Explicit boundaries enable autonomy",
-    "Governance is a design property, not a policy layer",
-    "AI works best when it can see and fully understand the system it's part of",
-  ];
-
-  return (
-    <div className="flex min-h-screen flex-col bg-background">
+  const principles = ["Systems should be explicitly defined, not inferred", "Structure should be machine-readable, not tribal knowledge", "AI should be a governed participant, not an external force", "Change should be intentional and auditable"];
+  const whatWeBuild = ["A unified system model (Everything as Code)", "Synaptic framework for agentic AI execution and governance", "Composable execution runtime architecture and reference runtimes (Web, API, Flow, Synaptic)", "FTM CLI for effective human and AI software co-architecture"];
+  const audiences = [{
+    icon: Code,
+    label: "Platform and infrastructure teams"
+  }, {
+    icon: Users,
+    label: "Architects and system designers"
+  }, {
+    icon: Target,
+    label: "AI-forward engineering teams"
+  }, {
+    icon: Rocket,
+    label: "Organizations operating in regulated or high-stakes environments"
+  }];
+  const beliefs = ["Structure enables speed", "Explicit boundaries enable autonomy", "Governance is a design property, not a policy layer", "AI works best when it can see and fully understand the system it's part of"];
+  return <div className="flex min-h-screen flex-col bg-background">
       <Header />
       
       {/* Hero Section */}
@@ -82,18 +68,13 @@ const About = () => {
               <br /><br />
               Most tools optimize individual layers. Very few define the system as a whole.
               <br /><br />
-              <span className="text-foreground">Fathym takes a different approach:</span>
+              <span className="text-foreground">Fathym takes a different approach.</span>
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
-              {principles.map((principle, index) => (
-                <div
-                  key={index}
-                  className="p-6 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm"
-                >
+              {principles.map((principle, index) => <div key={index} className="p-6 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm">
                   <p className="text-foreground">{principle}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <p className="text-lg text-muted-foreground text-center mt-12">
@@ -118,25 +99,15 @@ const About = () => {
             </p>
             
             <div className="space-y-4">
-              {whatWeBuild.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-4 p-5 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm"
-                >
+              {whatWeBuild.map((item, index) => <div key={index} className="flex items-center gap-4 p-5 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm">
                   <div className="w-2 h-2 rounded-full bg-neon-lime flex-shrink-0" />
                   <p className="text-foreground">{item}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <p className="text-lg text-muted-foreground text-center mt-12">
               These capabilities power both horizontal platform tooling and vertical solutions such as{" "}
-              <a 
-                href="https://www.openindustrial.co/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-neon-cyan hover:underline"
-              >
+              <a href="https://www.openindustrial.co/" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:underline">
                 Open Industrial
               </a>.
             </p>
@@ -156,15 +127,10 @@ const About = () => {
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
-              {audiences.map((audience, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-4 p-6 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm"
-                >
+              {audiences.map((audience, index) => <div key={index} className="flex items-center gap-4 p-6 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm">
                   <audience.icon className="w-6 h-6 text-neon-magenta flex-shrink-0" />
                   <p className="text-foreground">{audience.label}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <p className="text-lg text-muted-foreground text-center mt-12">
@@ -184,14 +150,9 @@ const About = () => {
             <p className="text-lg text-muted-foreground text-center mb-12">We believe</p>
             
             <div className="space-y-4">
-              {beliefs.map((belief, index) => (
-                <div
-                  key={index}
-                  className="p-5 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm text-center"
-                >
+              {beliefs.map((belief, index) => <div key={index} className="p-5 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm text-center">
                   <p className="text-foreground">{belief}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <p className="text-lg text-muted-foreground text-center mt-12">
@@ -232,8 +193,6 @@ const About = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;

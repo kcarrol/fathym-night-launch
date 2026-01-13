@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Users, Target, Rocket } from "lucide-react";
 const About = () => {
   const principles = ["Systems should be explicitly defined, not inferred", "Structure should be machine-readable, not tribal knowledge", "AI should be a governed participant, not an external force", "Change should be intentional and auditable"];
-  const whatWeBuild = ["A unified system model (Everything as Code)", "Synaptic framework for agentic AI execution and governance", "Composable execution runtime architecture and reference runtimes (Web, API, Flow, Synaptic)", "FTM CLI for effective human and AI software co-architecture"];
+  const whatWeBuild = ["Everything as Code – A unified operating model for software composition", "Synaptic – A framework and runtime for agentic AI execution and governance", "FTM CLI – A command interface for human + AI stewarding of AI-built systems", "Composable runtime execution architecture and reference runtimes"];
   const audiences = [{
     icon: Code,
     label: "Platform and infrastructure teams"

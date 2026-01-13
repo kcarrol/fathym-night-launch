@@ -63,9 +63,11 @@ const About = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-8">
               Our <span className="text-neon-cyan">perspective</span>
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-              Modern software is no longer a single application. It is a system of runtimes, services, workflows, data, infrastructure, and increasingly, autonomous AI behavior.
-              <br /><br />
+            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">Modern software is no longer a single application. It is a system of runtimes, services, workflows, data, infrastructure, and increasingly, autonomous AI behavior.
+
+Most tools optimize individual layers without defining the system as a whole.
+
+Fathym takes a different approach.<br /><br />
               Most tools optimize individual layers. Very few define the system as a whole.
               <br /><br />
               <span className="text-foreground">Fathym takes a different approach.</span>

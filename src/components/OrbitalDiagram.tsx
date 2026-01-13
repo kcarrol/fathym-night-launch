@@ -38,8 +38,25 @@ const OrbitalDiagram = () => {
             viewBox="0 0 800 500"
             preserveAspectRatio="xMidYMid meet"
           >
+            <style>
+              {`
+                @keyframes orbit-rotate {
+                  from { stroke-dashoffset: 0; }
+                  to { stroke-dashoffset: -56; }
+                }
+                @keyframes orbit-rotate-reverse {
+                  from { stroke-dashoffset: 0; }
+                  to { stroke-dashoffset: 56; }
+                }
+                .orbit-1 { animation: orbit-rotate 12s linear infinite; }
+                .orbit-2 { animation: orbit-rotate-reverse 10s linear infinite; }
+                .orbit-3 { animation: orbit-rotate 8s linear infinite; }
+                .orbit-4 { animation: orbit-rotate-reverse 6s linear infinite; }
+              `}
+            </style>
             {/* Outermost orbit - cyan */}
             <ellipse
+              className="orbit-1"
               cx="400"
               cy="250"
               rx="380"
@@ -52,6 +69,7 @@ const OrbitalDiagram = () => {
             />
             {/* Second orbit - orange/yellow */}
             <ellipse
+              className="orbit-2"
               cx="400"
               cy="250"
               rx="320"
@@ -64,6 +82,7 @@ const OrbitalDiagram = () => {
             />
             {/* Third orbit - magenta */}
             <ellipse
+              className="orbit-3"
               cx="400"
               cy="250"
               rx="260"
@@ -76,6 +95,7 @@ const OrbitalDiagram = () => {
             />
             {/* Inner orbit - cyan */}
             <ellipse
+              className="orbit-4"
               cx="400"
               cy="250"
               rx="200"
